@@ -6,9 +6,10 @@
     <session-factory>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost/bookdb</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost/bookdb?serverTimezone=UTC</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">root21!</property>
         <mapping resource="Book.hbm.xml"/>
+        <mapping resource="person.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

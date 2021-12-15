@@ -1,15 +1,21 @@
 package com.hibernate.demo;
 
 public class Book {
-    Integer id;
+    int id;
     String bookName;
     String bookAuthor;
 
-    public Integer getId() {
+    public Book(String bookName,String bookAuthor){
+        this.bookName = bookName;
+        this.bookAuthor = bookAuthor;
+    }
+
+
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 

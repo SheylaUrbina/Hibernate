@@ -4,9 +4,9 @@
 
 <hibernate-mapping>
     <class name="com.hibernate.demo.Book" table="book">
-        <id name="id" type="java.lang.Integer">
+        <id name="id" type="int">
             <column name="id" />
-            <generator class="increment" />
+            <generator class="increment"/>
         </id>
         <property name="bookName" type="java.lang.String">
             <column name="book_name" />
